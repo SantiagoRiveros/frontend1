@@ -1,6 +1,7 @@
 .main-container {
-  height: 300px;
+  height: 800px;
   background-color: black;
+  position:relative
 }
 
 .footer {
@@ -24,4 +25,11 @@ button {
 
 .button-float {
   background-color: green;
+}
+
+.astro {
+  height: 100px;
+  margin-top: 120px;
+  margin-left: 30px;
+  position: absolute;
 }
