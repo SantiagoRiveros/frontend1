@@ -15,35 +15,30 @@ function Animate() {
 }
 Animate() */
 
-/* function move() {
+function move() {
   let img = document.querySelector(".astro");
   img.style.marginLeft += "700px";
 }
-move();
 
 function reduce() {
   let img = document.querySelector(".astro");
   img.style.transform = "scale(0.6)";
 }
-reduce();
 
 function enhance() {
   let img = document.querySelector(".astro");
   img.style.transform = "scale(1.2)";
 }
-enhance();
 
 function resetPosition() {
   let img = document.querySelector(".astro");
   img.style.marginLeft = "30px";
 }
-resetPosition();
 
 function MoveUp() {
   let img = document.querySelector(".astro");
   img.style.marginTop = "10px";
 }
-MoveUp(); */
 
 function cambiarFondo() {
   let space = document.querySelector(".main-container");
