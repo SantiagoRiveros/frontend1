@@ -15,7 +15,7 @@ function Animate() {
 }
 Animate() */
 
-function move() {
+/* function move() {
   let img = document.querySelector(".astro");
   img.style.marginLeft += "700px";
 }
@@ -43,10 +43,15 @@ function MoveUp() {
   let img = document.querySelector(".astro");
   img.style.marginTop = "10px";
 }
-MoveUp();
+MoveUp(); */
 
 function cambiarFondo() {
   let space = document.querySelector(".main-container");
   space.style.backgroundColor = "#420a8d";
 }
-cambiarFondo();
+/* cambiarFondo(); */
+let botonColor = document.querySelector(".button-color");
+
+botonColor.addEventListener("click", function () {
+  cambiarFondo();
+});
