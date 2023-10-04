@@ -15,46 +15,42 @@ function Animate() {
 }
 Animate() */
 
+/* SELECTORES */
+let astronauta = document.querySelector(".astro");
+let space = document.querySelector(".main-container");
+let botonColor = document.querySelector(".button-color");
+
 function move() {
-  let img = document.querySelector(".astro");
   img.style.marginLeft += "700px";
 }
 
 function reduce() {
-  let img = document.querySelector(".astro");
   img.style.transform = "scale(0.6)";
 }
 
 function enhance() {
-  let img = document.querySelector(".astro");
   img.style.transform = "scale(1.2)";
 }
 
 function resetPosition() {
-  let img = document.querySelector(".astro");
   img.style.marginLeft = "30px";
-  img.style.marginTop= "120px";
+  img.style.marginTop = "120px";
 }
 
 function MoveUp() {
-  let img = document.querySelector(".astro");
   img.style.marginTop = "10px";
 }
 
 function cambiarFondo() {
-  let space = document.querySelector(".main-container");
   space.style.backgroundColor = "#420a8d";
 }
-/* cambiarFondo(); */
-let botonColor = document.querySelector(".button-color");
 
 botonColor.addEventListener("click", function () {
   cambiarFondo();
 });
 
-function posicionInicialAgrandar (){
-    let image = document.querySelector(".astronauta");
-    resetPosition() 
-    enhance()
+function posicionInicialAgrandar() {
+  resetPosition();
+  enhance();
 }
-posicionInicialAgrandar ()
+posicionInicialAgrandar();
