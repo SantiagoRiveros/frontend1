@@ -19,6 +19,5 @@ agrandar();
 function volverAlInicio() {
   let image = document.querySelector(".astronauta");
   image.style.marginLeft = "30px";
-  image.style.transform = "scale(1)";
 }
 volverAlInicio();
