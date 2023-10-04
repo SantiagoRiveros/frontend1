@@ -33,6 +33,7 @@ function enhance() {
 function resetPosition() {
   let img = document.querySelector(".astro");
   img.style.marginLeft = "30px";
+  img.style.marginTop= "120px";
 }
 
 function MoveUp() {
@@ -50,3 +51,10 @@ let botonColor = document.querySelector(".button-color");
 botonColor.addEventListener("click", function () {
   cambiarFondo();
 });
+
+function posicionInicialAgrandar (){
+    let image = document.querySelector(".astronauta");
+    resetPosition() 
+    enhance()
+}
+posicionInicialAgrandar ()
