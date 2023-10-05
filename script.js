@@ -1,3 +1,6 @@
+let btMove = document.querySelector(".button-move")
+
+btMove.addEventListener("click",function(event){resetPosition();resize()});
 /* var id = null;
 function Animate() {
   var elem = document.querySelector(".astro");   
@@ -27,6 +30,11 @@ function reduce() {
 }
 reduce();
 
+function resize() {
+    let img = document.querySelector(".astro");
+    img.style.transform = "scale(1)";
+  }
+
 function enhance() {
   let img = document.querySelector(".astro");
   img.style.transform = "scale(1.2)";
@@ -35,9 +43,10 @@ enhance();
 
 function resetPosition() {
   let img = document.querySelector(".astro");
+  img.style.marginTop= "120px";
   img.style.marginLeft = "30px";
 }
-resetPosition();
+/* resetPosition(); */
 
 function MoveUp() {
   let img = document.querySelector(".astro");
