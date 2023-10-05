@@ -1,6 +1,3 @@
-let btMove = document.querySelector(".button-move")
-
-btMove.addEventListener("click",function(event){resetPosition();resize()});
 /* var id = null;
 function Animate() {
   var elem = document.querySelector(".astro");   
@@ -18,44 +15,56 @@ function Animate() {
 }
 Animate() */
 
+/* SELECTORES */
+let astronauta = document.querySelector(".astro");
+let space = document.querySelector(".main-container");
+let botonColor = document.querySelector(".button-color");
+let btMove = document.querySelector(".button-move")
+
 function move() {
-  let img = document.querySelector(".astro");
-  img.style.marginLeft += "700px";
+  let resultado = parseInt(astronauta.style.marginLeft) + 700;
+  astronauta.style.marginLeft = resultado + "px";
 }
-move();
 
 function reduce() {
-  let img = document.querySelector(".astro");
-  img.style.transform = "scale(0.6)";
+  astronauta.style.transform = "scale(0.6)";
 }
-reduce();
-
-function resize() {
-    let img = document.querySelector(".astro");
-    img.style.transform = "scale(1)";
-  }
 
 function enhance() {
-  let img = document.querySelector(".astro");
-  img.style.transform = "scale(1.2)";
+  astronauta.style.transform = "scale(1.2)";
 }
-enhance();
 
 function resetPosition() {
-  let img = document.querySelector(".astro");
-  img.style.marginTop= "120px";
-  img.style.marginLeft = "30px";
+  astronauta.style.marginLeft = "30px";
+  astronauta.style.marginTop = "120px";
 }
-/* resetPosition(); */
 
 function MoveUp() {
-  let img = document.querySelector(".astro");
-  img.style.marginTop = "10px";
+  astronauta.style.marginTop = "10px";
 }
-MoveUp();
 
 function cambiarFondo() {
-  let space = document.querySelector(".main-container");
   space.style.backgroundColor = "#420a8d";
 }
-cambiarFondo();
+
+/* FUNCIONES COMPUESTAS */
+function posicionInicialAgrandar() {
+  resetPosition();
+  enhance();
+}
+posicionInicialAgrandar();
+
+/* EVENT LISTENERS */
+botonColor.addEventListener("click", function () {
+  cambiarFondo();
+});
+
+document.addEventListener("keydown", (event) => {
+  console.log(event.code);
+  if (event.code === "Space") {
+    move();
+    reduce();
+  }
+});
+
+btMove.addEventListener("click",function(event){resetPosition();resize()});
