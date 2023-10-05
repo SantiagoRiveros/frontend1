@@ -1,6 +1,7 @@
 .main-container {
   height: 800px;
   background-color: black;
+  position: relative;
 }
 
 .footer {
@@ -26,8 +27,9 @@ button {
   background-color: green;
 }
 
-.astronauta {
+.astro {
   height: 100px;
   margin-top: 120px;
   margin-left: 30px;
+  position: absolute;
 }
