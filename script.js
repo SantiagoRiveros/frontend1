@@ -30,6 +30,10 @@ function reduce() {
   astronauta.style.transform = "scale(0.6)";
 }
 
+function resize(){
+  astronauta.style.transform = "scale(1)";
+}
+
 function enhance() {
   astronauta.style.transform = "scale(1.2)";
 }
